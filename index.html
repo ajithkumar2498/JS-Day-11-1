@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+<style>
+#search{
+    margin-top: 50px;
+    margin-left: 500px;
+   Width:500px;
+   height: 40px;
+   border-radius: 5px;
+}
+::placeholder{
+    color:Black;
+    opacity: 50%;
+    font-size: 20px;
+    justify-content: center;
+}
+.container{
+    margin-top: 70px;
+    margin-left: 150px;
+    height: 550px;
+    width: 1200px;
+    padding: 20px;
+    background-color: rgb(71, 82, 71);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 20px;
+    column-gap:  1px;      
+    }
+.event1{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px 5px rgb(60, 60, 60);
+    font-size: 20px;
+    padding-top: 5px;
+    display:grid;
+    border-radius: 5px;
+    text-align: center;
+    margin:10px;
+    width: 250px;
+    height: 220px;
+    border:none;
+    position: relative;
+    transition: transform .2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.event1:hover{
+  transform: scale(1.2);
+}
+.image1{
+    box-shadow: 2px 2px 1px 2px rgb(170, 169, 169);
+    position: absolute;
+    margin-top:70px;
+    margin-left: 10px;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+.image1:hover{
+    opacity: 35%;
+    transform: scale(0.9);
+
+}
+.eventcontent1{
+    padding-left: 25px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.date1{
+    position:absolute;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.eventbooking1{
+    font-size: 15px;
+  padding: 2px;
+  border: 1px solid black;
+  border: none;
+  box-shadow: 1px 1px 2px 1px grey;
+  color: white;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: rgb(23, 160, 91);
+}
+.button1:hover {
+    background-color: #3e8e41;
+    color:black;
+    transform: scale(1.2);
+}
+.event2{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px 5px rgb(60, 60, 60);
+    font-size: 20px;
+    padding-top: 5px;
+    display:grid;
+    border-radius: 5px;
+    text-align: center;
+    margin:10px;
+    width: 250px;
+    height: 220px;
+    border:1px solid black;
+    position: relative;
+    transition: transform .2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.event2:hover{
+  transform: scale(1.2);
+}
+.image2{
+    box-shadow: 2px 2px 1px 2px rgb(170, 169, 169);
+    position: absolute;
+    margin-top:70px;
+    margin-left: 10px;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+.image2:hover{
+    opacity: 35%;
+    transform: scale(0.9);
+}
+.eventcontent2{
+    padding-left: 25px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.date2{
+    position:absolute;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.eventbooking2{
+    font-size: 15px;
+  padding: 2px;
+  border: 1px solid black;
+  border: none;
+  box-shadow: 1px 1px 2px 1px grey;
+  color: white;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: rgb(23, 160, 91);
+}
+.button2:hover {
+    background-color: #3e8e41;
+    color:black;
+    transform: scale(1.2);
+}
+.event3{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px 5px rgb(60, 60, 60);
+    font-size: 20px;
+    padding-top: 5px;
+    display:grid;
+    border-radius: 5px;
+    text-align: center;
+    margin:10px;
+    width: 250px;
+    height: 220px;
+    border:1px solid black;
+    position: relative;
+    transition: transform .2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.event3:hover{
+  transform: scale(1.2);
+}
+.image3{
+    box-shadow: 2px 2px 1px 2px rgb(170, 169, 169);
+    position: absolute;
+    margin-top:70px;
+    margin-left: 10px;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+.image3:hover{
+    opacity: 35%;
+    transform: scale(0.9);
+
+}
+.eventcontent3{
+    padding-left: 25px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.date3{
+    position:absolute;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.eventbooking3{
+  font-size: 15px;
+  padding: 2px;
+  border: 1px solid black;
+  border: none;
+  box-shadow: 1px 1px 2px 1px grey;
+  color: white;
+  /* position: relative; */
+  margin-top: 70px;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: rgb(23, 160, 91);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.button3:hover {
+    background-color: #3e8e41;
+    color:black;
+    transform: scale(1.2);
+}
+.event4{
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px 5px rgb(60, 60, 60);
+    font-size: 20px;
+    padding-top: 5px;
+    display:grid;
+    border-radius: 5px;
+    text-align: center;
+    margin:10px;
+    width: 250px;
+    height: 220px;
+    border:1px solid black;
+    position: relative;
+    transition: transform .2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.event4:hover{
+  transform: scale(1.2);
+}
+.image4{
+    box-shadow: 2px 2px 1px 2px rgb(170, 169, 169);
+    position: absolute;
+    margin-top:70px;
+    margin-left: 10px;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+.image4:hover{
+    opacity: 35%;
+    transform: scale(0.9);
+
+}
+.eventcontent4{
+    padding-left: 25px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.date4{
+    position:absolute;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.eventbooking4{
+   font-size: 15px;
+  padding: 2px;
+  border: 1px solid black;
+  border: none;
+  box-shadow: 1px 1px 2px 1px grey;
+  color: white;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: rgb(23, 160, 91);
+}
+.button4:hover {
+    background-color: #3e8e41;
+    color:black;
+    transform: scale(1.2);
+}
+.event5{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px 5px rgb(60, 60, 60);
+    font-size: 20px;
+    padding-top: 5px;
+    display:grid;
+    border-radius: 5px;
+    text-align: center;
+    margin:10px;
+    width: 250px;
+    height: 220px;
+    transition: transform .2s;
+    border:1px solid black;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.image5{
+    box-shadow: 2px 2px 1px 2px rgb(170, 169, 169);
+    position: absolute;
+    margin-top:70px;
+    margin-left: 10px;
+    transition: transform .2s;
+    border-radius: 25px;
+}
+.image5:hover{
+    opacity: 35%;
+    transform: scale(0.9);
+
+}
+.eventcontent5{
+    padding-left: 25px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.date5{
+    position:absolute;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.eventbooking5{
+    font-size: 15px;
+  padding: 2px;
+  border: 1px solid black;
+  border: none;
+  box-shadow: 1px 1px 2px 1px grey;
+  color: white;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: rgb(23, 160, 91);
+}
+.button5:hover {
+    background-color: #3e8e41;
+    color:black;
+    transform: scale(1.2);
+}
+.event5:hover{
+  transform: scale(1.2);
+}
+.event6{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px 5px rgb(60, 60, 60);
+    font-size: 20px;
+    padding-top: 5px;
+    display:grid;
+    border-radius: 5px;
+    text-align: center;
+    margin:10px;
+    width: 250px;
+    transition: transform .2s;
+    height: 220px;
+    border:1px solid black;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.event6:hover{
+  transform: scale(1.2);
+}
+.image6{
+    box-shadow: 2px 2px 1px 2px rgb(170, 169, 169);
+    position: absolute;
+    margin-top:70px;
+    margin-left: 10px;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+.image6:hover{
+    opacity: 35%;
+    transform: scale(0.9);
+
+}
+.eventcontent6{
+    padding-left: 25px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.date6{
+    position:absolute;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.eventbooking6{
+    font-size: 15px;
+  padding: 2px;
+  border: 1px solid black;
+  border: none;
+  box-shadow: 1px 1px 2px 1px grey;
+  color: white;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: rgb(23, 160, 91);
+  opacity: 0.6;
+  cursor:not-allowed;
+}
+.button6:hover {
+    background-color: #3e8e41;
+    color:black;
+    transform: scale(1.2);
+}
+.event7{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px 5px rgb(60, 60, 60);
+    font-size: 20px;
+    transition: transform .2s;
+    padding-top: 5px;
+    display:grid;
+    border-radius: 5px;
+    text-align: center;
+    margin:10px;
+    width: 250px;
+    height: 220px;
+    border:1px solid black;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.event7:hover{
+  transform: scale(1.2);
+}
+.image7{
+    box-shadow: 2px 2px 1px 2px rgb(170, 169, 169);
+    position: absolute;
+    margin-top:70px;
+    margin-left: 10px;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+.image7:hover{
+    opacity: 35%;
+    transform: scale(0.9);
+}
+.eventcontent7{
+    padding-left: 25px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.date7{
+    position:absolute;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.eventbooking7{
+    font-size: 15px;
+  padding: 2px;
+  border: 1px solid black;
+  border: none;
+  box-shadow: 1px 1px 2px 1px grey;
+  color: white;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: rgb(23, 160, 91);
+}
+.button7:hover {
+    background-color: #3e8e41;
+    color:black;
+    transform: scale(1.2);
+}
+.event8{
+    background-color: grey;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 3px 5px rgb(60, 60, 60);
+    font-size: 20px;
+    padding-top: 5px;
+    display:grid;
+    border-radius: 5px;
+    text-align: center;
+    margin:10px;
+    width: 250px;
+    transition: transform .2s;
+    height: 220px;
+    border:1px solid black;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.event8:hover{
+  transform: scale(1.2);
+}
+.image8{
+    box-shadow: 2px 2px 1px 2px rgb(170, 169, 169);
+    position: absolute;
+    margin-top:70px;
+    margin-left: 10px;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+.image8:hover{
+    opacity: 35%;
+    transform: scale(0.9);
+
+}
+.eventcontent8{
+    padding-left: 25px;
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+.date8{
+    position:absolute;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: left;
+}
+.eventbooking8{
+  font-size: 15px;
+  padding: 2px;
+  border: 1px solid black;
+  border: none;
+  box-shadow: 1px 1px 2px 1px grey;
+  color: white;
+  position: relative;
+  margin-top: 70px;
+  margin-left: 10px;
+  border-radius: 3px;
+  background-color: rgb(23, 160, 91);
+}
+.button8:hover {
+    background-color: #3e8e41;
+    color:black;
+    transform: scale(1.2);
+}
+</style>
+
+</head>
+<body>
+  <input id="search" type="search" style=" text-align: center;"placeholder="SEARCH EVENTS">  
+  <div class="container">
+  <div class="event1 ">Event 1
+    <img class="image1" src="Dance.jpg" alt="dancing Event" width="80" height="120">
+    <div class="eventcontent1">
+     23-May-2020
+     <div class="date1">Seats Available:23</div>
+     <button class="eventbooking1 button1"><b>Book Now</b> </button>
+    </div>
+  </div>
+  <div class="event2">Event 2
+    <img class="image2" src="singing.jpg" alt="Singing Event" width="80" height="120">
+    <div class="eventcontent2">
+     23-May-2020
+     <div class="date2">Seats Available:23</div>
+     <button class="eventbooking2 button2"><b>Book Now</b> </button>
+    </div>
+  </div>
+  </div>
+  <div class="event3">Event 3
+    <img class="image3" src="coding.jpg" alt="coding Event" width="80" height="120">
+    <div class="eventcontent3">
+     23-May-2020
+     <div class="date3">Seats Available:0</div>
+     <button class="eventbooking3 button3"><b>Sold out</b> </button>
+    </div>
+  </div>
+  </div>
+  <div class="event4">Event 4
+    <img class="image4" src="Writing.png" alt="dancing Event" width="80" height="120">
+    <div class="eventcontent4">
+     23-May-2020
+     <div class="date4">Seats Available:23</div>
+     <button class="eventbooking4 button4"><b>Book Now</b> </button>
+    </div>
+  </div>
+  </div>
+  <div class="event5">Event 5
+    <img class="image5" src="chess.jpg" alt="dancing Event" width="80" height="120">
+    <div class="eventcontent5">
+     23-May-2020
+     <div class="date5">Seats Available:23</div>
+     <button class="eventbooking5 button5"><b>Book Now</b> </button>
+    </div>
+  </div>
+  </div>
+  <div class="event6">Event 6
+    <img class="image6" src="carrom.jpg" alt="dancing Event" width="80" height="120">
+    <div class="eventcontent1">
+     23-May-2020
+     <div class="date6">Seats Available:0</div>
+     <button class="eventbooking6 button6"><b>Sold out</b> </button>
+    </div>
+  </div>
+  </div>
+  <div class="event7">Event 7
+    <img class="image7" src="Table Tennis.jpg" alt="dancing Event" width="80" height="120">
+    <div class="eventcontent1">
+     23-May-2020
+     <div class="date7">Seats Available:23</div>
+     <button class="eventbooking7 button7"><b>Book Now</b> </button>
+    </div>
+  </div>
+  </div>
+  <div class="event8">Event 8
+    <img class="image8" src="BGMI.jpg" alt="dancing Event" width="80" height="120">
+    <div class="eventcontent8">
+     23-May-2020
+     <div class="date8">Seats Available:23</div>
+     <button class="eventbooking8 button8"><b>Book Now</b> </button>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
